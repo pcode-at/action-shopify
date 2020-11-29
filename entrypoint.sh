@@ -17,5 +17,5 @@ git push origin github-action-updates
 git checkout develop
 git merge github-action-updates -m="Update shopify configuration"
 git push origin develop
-theme configure --password="$SHOPIFY_DEVELOP_PASSWORD" --store="$SHOPIFY_DEVELOP_STORE_URL" --themeid="$SHOPIFY_DEVELOP_THEME_ID"
+theme configure --password="$SHOPIFY_STAGING_PASSWORD" --store="$SHOPIFY_STAGING_STORE_URL" --themeid="$SHOPIFY_STAGING_THEME_ID"
 theme deploy --no-ignore --allow-live
