@@ -8,7 +8,6 @@ git fetch
 git checkout github-action-updates
 git pull --rebase
 cd "$THEME_PATH"
-curl -s https://shopify.github.io/themekit/scripts/install.py | sudo python
 theme configure --password="$SHOPIFY_PRODUCTION_PASSWORD" --store="$SHOPIFY_PRODUCTION_STORE_URL" --themeid="$SHOPIFY_PREPRODUCTION_THEME_ID"
 theme download --no-ignore config/settings_data.json locales/*
 git add config/settings_data.json locales/*
