@@ -5,7 +5,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN curl -s https://shopify.github.io/themekit/scripts/install.py | python
-RUN apt install git-all
+RUN apt-get install git
 
 COPY "entrypoint.sh" "/entrypoint.sh"
 RUN chmod +x /entrypoint.sh
